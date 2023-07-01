@@ -1,18 +1,19 @@
 {
     "jsc": {
-      "parser": {
-        "syntax": "ecmascript",
-        "tsx": false,
-        "jsx":true
-      },
-      "transform": {
-        "legacyDecorator": true,
-        "react": {
-          "runtime": "automatic",
-          "pragma": "React.createElement",
-          "pragmaFrag": "React.Fragment"
+        "parser": {
+            "syntax": "typescript",
+            "tsx": true,
+            "dynamicImport": false,
+            "target":"es3"
+        },
+        "externalHelpers": true,
+        "transform": {
+            "legacyDecorator": true,
+            "react": {
+                "runtime": "automatic",
+                "pragma": "React.createElement",
+                "pragmaFrag": "React.Fragment"
+            }
         }
-      }
     }
-  }
-  
+}

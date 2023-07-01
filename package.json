@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx swc src -d build && node build/index.js",
+    "start": "npx swc src -d build && node --experimental-specifier-resolution=node build/index.js",
     "build": "npx swc src -d build"
   },
   "author": "",
@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@swc/cli": "^0.1.62",
-    "@swc/core": "^1.3.67"
+    "@swc/core": "^1.3.67",
+    "@types/react": "^18.2.14",
+    "typescript": "^5.1.6"
   }
 }
