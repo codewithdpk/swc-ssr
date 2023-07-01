@@ -1,0 +1,1 @@
+### Basic server side rendering demonstration using SWC (Rust based Javascript compiler) & react-dom lib.
